@@ -1,0 +1,265 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Vedic Nerd - Resume LaTeX Template
+%
+% Original author:
+% Ganesh Mohan (http://about.me/ganesh.mohan)
+%
+% Github repository:
+% https://github.com/ganesh2shiv/resume-latex-template
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{article}
+
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{hyperref}
+% DEFINITIONS FOR RESUME
+
+\textheight=10in
+\pagestyle{fancy}
+\raggedright
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+
+\setlength{\hoffset}{-2pt}
+\setlength{\footskip}{20pt}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+\newcommand{\contact}[3]{
+\vspace*{5pt}
+\begin{center}
+{\Huge \scshape {#1}}\\
+\vspace{3pt}
+#2 
+\vspace{2pt}
+#3
+\end{center}
+\vspace*{-8pt}
+}
+
+\newcommand{\header}[1]{{
+\hspace*{-15pt}\vspace*{6pt} \textsc{#1}} \vspace*{-6pt} 
+\lineunder
+}
+
+\newcommand{\lineunder}{
+\vspace*{-8pt} \\ \hspace*{-18pt} 
+\hrulefill \\
+}
+
+\newcommand{\content}{
+\vspace*{2pt}%
+}
+
+\newcommand{\college}[5]{\vspace*{2pt}% 
+\textbf{#1} \labelitemi #2 \labelitemi #3 \hfill #4 \\ #5 
+\vspace*{5pt}
+}
+
+\newcommand{\school}[4]{
+\textbf{#1} \labelitemi #2 \hfill #3 \\ #4 \vspace*{5pt}
+}
+
+\newcommand{\employer}[4]{{
+\vspace*{2pt}%
+\textbf{#1} #2 \hfill #3\\ #4 \vspace*{2pt}}
+}
+
+\newcommand{\project}[4]{{
+\vspace*{2pt}% 
+\textbf{#1} #2 \hfill #3\\ \textit{#4} \vspace*{2pt}}
+}
+
+\renewcommand{\labelitemi}{
+$\vcenter{\hbox{\tiny$\bullet$}}$\hspace*{3pt}
+}
+
+\renewcommand{\labelitemii}{
+$\vcenter{\hbox{\tiny$\bullet$}}$\hspace*{-3pt}
+}
+
+\newenvironment{bullet-list-major}{
+\begin{list}{\labelitemii}{\setlength\leftmargin{3pt} 
+\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}\end{list}
+}
+
+\newenvironment{bullet-list-minor}{
+\begin{list}{\labelitemii}{\setlength\leftmargin{15pt} 
+\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}\end{list}
+}
+
+\cfoot{
+Last updated: Jan 7, 2020
+}
+
+\rfoot{
+Page $\thepage\hspace*{3pt}\vert\hspace*{3pt}\pageref{LastPage}$
+}
+
+% END RESUME DEFINITIONS
+
+\begin{document}
+
+\small
+\smallskip
+\vspace*{-44pt}
+
+\contact{Deebul Nair}
+{Wacholderweg 9, Sankt Augustin, 53757\\}
+{(+49) 015218672925 \labelitemi deebul.nair@h-brs.de}
+\vspace{15pt}
+%\header{Personal Profile}
+%    \content{A detail oriented and experienced Android native application developer with a stellar record of corporate client satisfaction. Always willing to learn \& experiment, happy to work both independently and as part of a team.\vspace{5pt}}
+
+\vspace*{4pt}%
+%\header{Objective}
+%    \content{To work in an environment that provides a challenging and rewarding career, ensuring a high level job satisfaction.\vspace{5pt}}
+
+\vspace*{4pt}%
+\header{Education}
+    \school{Bonn-Rhein-Sieg University Applied Sciences}{Sankt Augustin, Germany}{ 2017}
+    {\textit{Master of Science \labelitemi Autonomous Systems}}
+    
+    \school{Centre for Development of Advanced Computing}{Hyderabad, India}{2010}
+    {\textit{Post Graduate Diploma} \labelitemi Embedded Systems Design }
+
+    \school{Xavier's Institute of Technology (Mumbai University)}{Mumbai, India}{2009}
+    {\textit{Bachelor of Technology} \labelitemi Electronics and Communication Engineering }
+
+\vspace*{4pt}%
+\header{Work Experience}
+    \employer{Research Assistant}{-- b-it-bots Team}{2017 -- present}
+    {Bonn-Rhein-Sieg University of Applied Sciences}
+	\begin{bullet-list-minor}
+	\item Integration of machine learning algorithms with ROS architecture.
+    \item Deep learning networks on embedded boards.
+    \item Maintainer for university open-source projects \url{https://github.com/b-it-bots}.
+	\item Defined projects architecture for modularity and scalability
+    \end{bullet-list-minor}
+    \employer{Research Assistant}{-- SciRoc Project}{2017 -- present}
+    {Bonn-Rhein-Sieg University of Applied Sciences}
+	\begin{bullet-list-minor}
+	\item Robotics benchmarking protocol definition for smart city scenario \url{https://sciroc.org/}. 
+    \item Conducting robotics benchmarking events.
+    \item Data collection and reporting of robot tasks.
+	\item Defined projects architecture for modularity and scalability
+    \end{bullet-list-minor}
+
+    \employer{Research Assistant}{-- DigiKlausur}{2017}
+    {Prof. Paul Pl\"{o}ger, Bonn-Rhein-Sieg University of Applied Sciences}
+    \begin{bullet-list-minor}
+    \item Infrastructure development for the Jupyter notebook based electronic examination
+    \item Integrated JupyterHub in the university infrastructure \url{https://github.com/DigiKlausur}
+    \item Supervised 2 students in their research and development projects for NLP based auto-grading.
+    \end{bullet-list-minor}
+
+    \employer{Teaching Assistant}{-- Mathematics for Robotics and Control}{2016}
+    {Prof. Paul Pl\"{o}ger, Bonn-Rhein-Sieg University of Applied Sciences}
+    \begin{bullet-list-minor}
+    \item  Prepared  and  presented  lectures  and  recitations,  supported  term  projects,  helped  students  with  course  materials, and graded homework
+    \item Developed Jupyter notebook based assignments.
+    \end{bullet-list-minor}
+
+    \employer{Research Assistant}{-- Machine learning tool development}{2015}
+    {Prof. Gerhard Kraetzschmar, Bonn-Rhein-Sieg University of Applied Sciences}
+    \begin{bullet-list-minor}
+    \item Researched different visualization methods for decision tree.
+    \item Developed tool to visualize decision tree output developed using scikit-sklearn python package
+    \item \url{https://github.com/deebuls/decision\_tree\_visualize}
+    \end{bullet-list-minor}
+    \employer{Senior Embedded Software Engineer}{-- IMO Project}{2012 -- 2014}
+    {Rockwell Collins, Inc}
+    \begin{bullet-list-minor}
+    \item Software development of the smart router for AIRBUS A350.
+    \item Involved in complete life cycle of software development from
+requirement writing(IBM Rational DOORS), designing(UML), development(C++), testing and software
+integration.
+    \item Responsible for implementation of communication manager which co-ordinated availability of different communication medium(LAN, WLAN, GSM, SATCOM) and provided the user with uninterrupted service.
+    \end{bullet-list-minor}
+    \employer{Senior Embedded Software Engineer}{-- ARINC  822}{2012 -- 2013}
+    {Rockwell Collins, Inc}
+    \begin{bullet-list-minor}
+    \item Implemented the proposed ARINC specification 822 - Air/ground
+Wireless Communication (Gatelink).
+    \item Software development in C++ for communicating with the WLAN controllers and
+access points
+    \item SDLC using IBM Rational DOORS
+    \end{bullet-list-minor}
+\newpage
+    \employer{Embedded Software Engineer}{Device Driver }{2011 -- 2012}
+    {Rockwell Collins, Inc}
+    \begin{bullet-list-minor}
+    \item Developed and maintained Linux device driver for custom FPGA chip on PowerPC MPC8572.
+    \item Developed and integrated Linux device driver for I2C protocol chip PCA555.
+    \end{bullet-list-minor}
+
+    \employer{Associate Engineer}{-- Board Support Package}{2010 -- 2011}
+    {Rockwell Collins, Inc}
+    \begin{bullet-list-minor}
+    \item Developed board support package for a Windriver Linux based customized x86 board.
+    \item Operating system selection and configuration 
+    \item Boot loader selection and customizing to the board 
+    \item Compiling device drivers for the peripherals 
+    \end{bullet-list-minor}
+    
+\vspace*{4pt}%
+\header{Open Source Contributions}
+
+\employer{b-it-bots}{-- \url{https://github.com/b-it-bots/mas\_industrial\_robotics}}{}{}
+\begin{bullet-list-minor}
+    \item ROS based software architecture for youBot industrial mobile robot.
+    \item contributor and administrator
+    \item code base for youBot robot used in international competitions
+\end{bullet-list-minor}
+\employer{sa\_tool\_python}{-- \url{https://github.com/deebuls/sa_tool_python} }{}
+    {}
+    \begin{bullet-list-minor}
+    \item python based tool for fault diagnosis in robots.
+    \item contributor and maintainer
+    \item used as a teaching tool in the course ``Fault detection and diagnosis''
+    \end{bullet-list-minor}
+
+\employer{BayesPy}{-- \url{https://github.com/bayespy/bayespy/}}{}{}    
+    \begin{bullet-list-minor}
+    \item tools for Bayesian inference with Python
+    \item contributor
+    \end{bullet-list-minor}
+    
+  
+\vspace*{4pt}%
+\header{Publications}
+\begin{bullet-list-major}
+ \item A. Padalkar, M. Wasil, S. Mahajan, R. Kumar, D. Bakaraniya, R. Shirodkar, H. Andradi, D. Padmanabhan, C. Wiesse, A. Abdelrahman, S. Chavan, N. Gurulingan, \textbf{D. Nair}, S. Thoduka, I. Awaad, S. Schneider, P. G. Pl\"{o}ger, and G. K. Kraetzschmar, ``\textbf{b-it-bots: Our Approach for Autonomous Robotics in Industrial Environments}'', in Proceedings of the 23rd RoboCup International Symposium, Sydney, Australia, 2019. 
+ \item K. Jeeveswaran, M. Muthuraja, \textbf{D. Nair}, and P. G. Pl\"{o}ger, ``\textbf{Using Active Learning for Assisted Short Answer Grading}'' in ICML Workshop on Real World Experiment Design and Active Learning, , 2020. 
+\end{bullet-list-major}
+
+\vspace*{4pt}%
+\header{Technical Skills}
+    \begin{bullet-list-major}
+    \item Programming Languages: C, C++, Python
+    \vspace{2pt}
+    \item Platforms \& Frameworks: Robot Operating Systems(ROS), Tensorflow, PyTorch
+    \vspace{2pt}
+    \item Tools \& Libraries: Git, Vim, Github actions, Docker, Travis
+    \vspace{2pt}
+    \item Operating Systems: Ubuntu, Debian, ArchLinux
+    \end{bullet-list-major}
+
+\vspace*{4pt}%
+\header{Achievements}
+    \begin{bullet-list-major}
+    \item 1st place in Robocup@work: RoboCup 2019, Sydney, Australia
+    \item 1st place in Robocup@work: German Open 2019, Magdeburg, Germany
+    \end{bullet-list-major}
+
+\vspace*{4pt}%
+\header{Areas of Interest}
+    \content{Robotics design \& integration \labelitemi Deep learning \& Architectures \labelitemi Embedded system design  \vspace{5pt}}
+
+\end{document}
