@@ -1,5 +1,7 @@
 # Deebul Nair <br>
-Wacholderweg 9, Sankt Augustin, Germany, 53757  <br>
+Wacholderweg 9, <br>
+Sankt Augustin, <br>
+Germany, 53757  <br>
 (+49) 015218672925  <br> 
 deebuls@gmail.com 
 
