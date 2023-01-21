@@ -12,7 +12,7 @@
 \documentclass{article}
 
 \usepackage{fullpage}
-\usepackage{amsmath}
+%\usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage[T1]{fontenc}
 \usepackage{fancyhdr}
@@ -77,11 +77,13 @@
 }
 
 \renewcommand{\labelitemi}{
-$\vcenter{\hbox{\tiny$\bullet$}}$\hspace*{3pt}
+%$\vcenter{\hbox{\tiny\textbullet}}$\hspace*{3pt}
+	\raisebox{0.3ex}{\tiny\textbullet}
 }
 
 \renewcommand{\labelitemii}{
-$\vcenter{\hbox{\tiny$\bullet$}}$\hspace*{-3pt}
+%$\vcenter{\hbox{\tiny$\bullet$}}$\hspace*{-3pt}
+	\raisebox{0.3ex}{\tiny\textbullet}
 }
 
 \newenvironment{bullet-list-major}{
@@ -95,7 +97,7 @@ $\vcenter{\hbox{\tiny$\bullet$}}$\hspace*{-3pt}
 }
 
 \cfoot{
-Last updated: Jan 7, 2020
+Last updated: Jan 21, 2022
 }
 
 \rfoot{
@@ -111,8 +113,8 @@ Page $\thepage\hspace*{3pt}\vert\hspace*{3pt}\pageref{LastPage}$
 \vspace*{-44pt}
 
 \contact{Deebul Nair}
-{Wacholderweg 9, Sankt Augustin, 53757\\}
-{(+49) 015218672925 \labelitemi deebul.nair@h-brs.de}
+{Wacholderweg 9, Sankt Augustin, Germany, 53757\\}
+{(+49) 015218672925 \labelitemi deebuls@gmail.com}
 \vspace{15pt}
 %\header{Personal Profile}
 %    \content{A detail oriented and experienced Android native application developer with a stellar record of corporate client satisfaction. Always willing to learn \& experiment, happy to work both independently and as part of a team.\vspace{5pt}}
@@ -121,54 +123,42 @@ Page $\thepage\hspace*{3pt}\vert\hspace*{3pt}\pageref{LastPage}$
 %\header{Objective}
 %    \content{To work in an environment that provides a challenging and rewarding career, ensuring a high level job satisfaction.\vspace{5pt}}
 
-\vspace*{4pt}%
-\header{Education}
-    \school{University of Luxembourg}{Luxembourg}{Present}
-    {\textit{Doctoral Candidate \labelitemi SpaceR Lab}}
-    
-    \school{Bonn-Rhein-Sieg University Applied Sciences}{Sankt Augustin, Germany}{ 2017}
-    {\textit{Master of Science \labelitemi Autonomous Systems}}
-    
-    \school{Centre for Development of Advanced Computing}{Hyderabad, India}{2010}
-    {\textit{Post Graduate Diploma} \labelitemi Embedded Systems Design }
-
-    \school{Xavier's Institute of Technology (Mumbai University)}{Mumbai, India}{2009}
-    {\textit{Bachelor of Technology} \labelitemi Electronics and Communication Engineering }
 
 \vspace*{4pt}%
 \header{Work Experience}
-    \employer{Research Assistant}{-- Sesame Project}{2022 -- present}
+    \employer{Senior Research Assistant}{-- Sesame Project}{2022 -- present}
     {Bonn-Rhein-Sieg University of Applied Sciences}
 	\begin{bullet-list-minor}
-	\item Uncertainty estimation for Deep Neural Networks
-    \item Improving reliability of DNN.
-    \item Meta-model definition for DNN testing and validation.
+	\item Uncertainty estimation for Deep Neural Networks(DNN).
+    \item Improving reliability of DNN for robot deployment.
+    \item  Temporal sensor fusion in DNN to incorcorporate emodiment in decision making.
     \end{bullet-list-minor}
     
-    \employer{Research Assistant}{-- b-it-bots Team}{2017 -- present}
+    \employer{Team Leader}{-- b-it-bots Team}{2017 -- present}
     {Bonn-Rhein-Sieg University of Applied Sciences}
 	\begin{bullet-list-minor}
+	\item Managing a team of software developers and roboticist.
+	\item Architecture Design, Software development(c++, python), Testing, CI, H/W Integration.
 	\item Integration of machine learning algorithms with ROS architecture.
     \item Deep learning networks on embedded boards.
     \item Maintainer for university open-source projects \url{https://github.com/b-it-bots}.
-	\item Defined projects architecture for modularity and scalability
+	\item Porting ROS1 to ROS2.
     \end{bullet-list-minor}
     
-    \employer{Research Assistant}{-- SciRoc Project}{2017 -- 2022}
+    \employer{Project Co-ordinator}{-- SciRoc Project}{2017 -- 2022}
     {Bonn-Rhein-Sieg University of Applied Sciences}
 	\begin{bullet-list-minor}
 	\item Robotics benchmarking protocol definition for smart city scenario \url{https://sciroc.org/}. 
     \item Conducting robotics benchmarking events.
-    %\item Data collection and reporting of robot tasks.
-	\item Defined projects architecture for modularity and scalability
+    \item Data collection and reporting of robot tasks.
     \end{bullet-list-minor}
     
 
-    \employer{Research Assistant}{-- DigiKlausur}{2017}
+    \employer{Research Assistant}{-- DigiKlausur}{2016 -- 2017}
     {Prof. Paul Pl\"{o}ger, Bonn-Rhein-Sieg University of Applied Sciences}
     \begin{bullet-list-minor}
-    \item Infrastructure development for the Jupyter notebook based electronic examination
-    \item Integrated JupyterHub in the university infrastructure \url{https://github.com/DigiKlausur}
+    \item Infrastructure development for the Jupyter notebook based electronic examination.
+    %\item Integrated JupyterHub in the university infrastructure \url{https://github.com/DigiKlausur}.
     \item Supervised 2 students in their research and development projects for NLP based auto-grading.
     \end{bullet-list-minor}
 
@@ -179,32 +169,35 @@ Page $\thepage\hspace*{3pt}\vert\hspace*{3pt}\pageref{LastPage}$
     %\item Developed Jupyter notebook based assignments.
     %\end{bullet-list-minor}
 
-    \employer{Research Assistant}{-- Machine learning tool development}{2015}
+    \employer{Research Software Developer}{-- Machine learning tool development}{2015 -- 2016}
     {Prof. Gerhard Kraetzschmar, Bonn-Rhein-Sieg University of Applied Sciences}
     \begin{bullet-list-minor}
-    \item Researched different visualization methods for decision tree.
-    \item Developed tool to visualize decision tree output developed using scikit-sklearn python package
+    \item Explainable AI methods for the \emph{Decision Tree} machine learning algorithm.
+    \item Developed tool to visualize decision tree output developed using scikit-sklearn python package.
     \item \url{https://github.com/deebuls/decision\_tree\_visualize}
     \end{bullet-list-minor}
+
     \employer{Senior Embedded Software Engineer}{-- IMO Project}{2012 -- 2014}
     {Rockwell Collins, Inc}
     \begin{bullet-list-minor}
     \item Software development of the smart router for AIRBUS A350.
+    \item Responsible for implementation of communication manager which co-ordinated availability of 
+	    different communication medium(LAN, WLAN, GSM, SATCOM) and provided the user with uninterrupted service.
     \item Involved in complete life cycle of software development from
-requirement writing(IBM Rational DOORS), designing(UML), development(C++), testing and software
-integration.
-    \item Responsible for implementation of communication manager which co-ordinated availability of different communication medium(LAN, WLAN, GSM, SATCOM) and provided the user with uninterrupted service.
+requirement writing(IBM Rational DOORS), designing(UML), development(C++), testing and software integration.
     \end{bullet-list-minor}
+
     \employer{Senior Embedded Software Engineer}{-- ARINC  822}{2012 -- 2013}
     {Rockwell Collins, Inc}
     \begin{bullet-list-minor}
     \item Implemented the proposed ARINC specification 822 - Air/ground
 Wireless Communication (Gatelink).
     \item Software development in C++ for communicating with the WLAN controllers and
-access points
+access point.
     \item SDLC using IBM Rational DOORS
     \end{bullet-list-minor}
-\newpage
+
+
     \employer{Embedded Software Engineer}{Device Driver }{2011 -- 2012}
     {Rockwell Collins, Inc}
     \begin{bullet-list-minor}
@@ -216,11 +209,35 @@ access points
     {Rockwell Collins, Inc}
     \begin{bullet-list-minor}
     \item Developed board support package for a Windriver Linux based customized x86 board.
-    \item Operating system selection and configuration 
-    \item Boot loader selection and customizing to the board 
-    \item Compiling device drivers for the peripherals 
+    \item Operating system selection and configuration.
+    \item Boot loader selection and customizing to the board.
+    \item Compiling device drivers for the peripherals.
     \end{bullet-list-minor}
-    
+
+%%%%% NEW PAGE
+\newpage
+%%%%% NEW PAGE
+
+
+\vspace*{4pt}%
+\header{Technical Skills}
+    \begin{bullet-list-major}
+    \item Programming Languages: C, C++, Python
+    \vspace{2pt}
+    \item Platforms \& Frameworks: Robot Operating Systems(ROS), Tensorflow, PyTorch, Scikit
+    \vspace{2pt}
+    \item Tools \& Libraries: Git, Vim, Github actions, Docker, Travis, Lxc container
+    \vspace{2pt}
+    \item Operating Systems: Ubuntu, Debian, Linux, VxWorks, Windriver Linux
+    \vspace{2pt}
+\item Standards:  DO-178B, ISO 26262, FMEA, AIRINC 429
+    \vspace{2pt}
+\item Software Development: Scrum, Jira
+    \vspace{2pt}
+\item Computer Vision Libraries: OpenCV, PCL, Kornia
+    \end{bullet-list-major}
+
+
 \vspace*{4pt}%
 \header{Open Source Contributions}
 
@@ -255,16 +272,18 @@ co-located with the Thirty-Sixth AAAI Conference on Artificial Intelligence (AAA
 \end{bullet-list-major}
 
 \vspace*{4pt}%
-\header{Technical Skills}
-    \begin{bullet-list-major}
-    \item Programming Languages: C, C++, Python
-    \vspace{2pt}
-    \item Platforms \& Frameworks: Robot Operating Systems(ROS), Tensorflow, PyTorch
-    \vspace{2pt}
-    \item Tools \& Libraries: Git, Vim, Github actions, Docker, Travis
-    \vspace{2pt}
-    \item Operating Systems: Ubuntu, Debian, ArchLinux
-    \end{bullet-list-major}
+\header{Education}
+    \school{University of Luxembourg}{Luxembourg city, Luxembourg}{Present}
+    {\textit{Doctoral Candidate} \labelitemi SpaceR Lab}
+    
+    \school{Bonn-Rhein-Sieg University Applied Sciences}{Sankt Augustin, Germany}{ 2017}
+    {\textit{Master of Science } \labelitemi Autonomous Systems}
+    
+    \school{Centre for Development of Advanced Computing}{Hyderabad, India}{2010}
+    {\textit{Post Graduate Diploma} \labelitemi Embedded Systems Design }
+
+    \school{Xavier's Institute of Technology (Mumbai University)}{Mumbai, India}{2009}
+    {\textit{Bachelor of Technology} \labelitemi Electronics and Communication Engineering }
 
 \vspace*{4pt}%
 \header{Achievements}
@@ -275,6 +294,6 @@ co-located with the Thirty-Sixth AAAI Conference on Artificial Intelligence (AAA
 
 \vspace*{4pt}%
 \header{Areas of Interest}
-    \content{Robotics design \& integration \labelitemi Deep learning \& Architectures \labelitemi Embedded system design  \vspace{5pt}}
+    \content{\labelitemi Robotics design \& integration \labelitemi Deep learning \& Architectures \labelitemi Embedded system design  \vspace{5pt}}
 
 \end{document}
