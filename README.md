@@ -34,8 +34,7 @@ SciRoc Project  <br>
 2017 -- 2022  <br>
 Bonn-Rhein-Sieg University of Applied Sciences
 
-* Robotics benchmarking protocol definition for smart city scenario
-<https://sciroc.org/>.
+* Robotics benchmarking protocol definition for smart city scenario <https://sciroc.org/>.
 * Conducting robotics benchmarking events.
 * Data collection and reporting of robot tasks.
 
@@ -112,8 +111,9 @@ PyTorch, Scikit
 container
 * **Operating Systems**: Ubuntu, Debian, Linux, VxWorks, Windriver Linux
 * **Standards**: DO-178B, ISO 26262, FMEA, AIRINC 429
-* **Software Development**: Scrum, Jira
+* **Software Development**: Scrum, Jira, Git, Github
 * **Computer Vision Libraries**: OpenCV, PCL, Kornia
+* **Build Systems**: Autotools, Make, CMake
 
 ## Open Source Contributions
 
