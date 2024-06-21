@@ -6,9 +6,27 @@ Germany, 53757  <br>
 deebuls@gmail.com 
 
 ## Work Experience
+
+**Senior Robotics Engineer** <br>
+ST Engineering Applied Solutions <br>
+2022 -- present <br>
+ST Engineering <br>
+
+* Developed and Integrated custom navigation stack for construction robots on top of ROS architecture.
+* Deployed robot control software on ARM based embedded systems.
+* Developed and deployed computer vision algorithms for water spray detection for construction robot. 
+* Demonstrated expertise in C/C++/Python programming, particularly in an embedded environment, to ensure efficient and high-performance code execution.
+* Temporal sensor fusion in DNN with different probabilistic methods Kalman Filter, Particle Filter. 
+* Ported robot software from ROS1 to ROS2.
+* Integrated the software with various ROS/ROS2 modules, ensuring seamless communication and compatibility with existing systems.
+* Wrote detailed documentation, including design specifications, user manuals, and technical guides, to facilitate seamless knowledge transfer and maintain system integrity.
+* Expertly leveraged computer vision frameworks and libraries such as Torch, PyTorch, Tensorflow, Tflite, ONNX, and OpenCV to develop and deploy robust applications.
+* Collaborated effectively with a team of engineers, fostering an environment of innovation and teamwork, while also being capable of independently driving projects forward.
+
+
 **Senior Research Assistant** <br>
 Sesame Project <br>
-2017 -- present <br>
+2017 -- 2022 <br>
 Bonn-Rhein-Sieg University of Applied Sciences<br>
 
 * Led the technical design phase, collaborating with a cross-functional team to determine the optimal architecture and system requirements.
@@ -16,19 +34,13 @@ Bonn-Rhein-Sieg University of Applied Sciences<br>
 * Implemented the system, including architecture modifications and quantization, to ensure efficient processing and execution on embedded platforms(coral, movidius, rasbery pi, OAD-D).
 * Trained and Deployed Uncertainty estimation for Deep Neural Networks(DNN) to improve robustness, reliability and Dependability attributes.
 * Developed custom data collection rigs and smart annotation of data.
-* Integrated the software with various ROS/ROS2 modules, ensuring seamless communication and compatibility with existing systems.
-* Wrote detailed documentation, including design specifications, user manuals, and technical guides, to facilitate seamless knowledge transfer and maintain system integrity.
 * Utilized strong understanding of machine learning and computer vision algorithms, including CNN/deep learning, to design and optimize algorithms for efficient implementation on embedded systems.
-* Expertly leveraged computer vision frameworks and libraries such as Torch, PyTorch, Tensorflow, Tflite, ONNX, and OpenCV to develop and deploy robust applications.
-* Demonstrated expertise in C/C++/Python programming, particularly in an embedded environment, to ensure efficient and high-performance code execution.
-* Temporal sensor fusion in DNN with different probabilistic methods Kalman Filter, Particle Filter. 
-* Collaborated effectively with a team of engineers, fostering an environment of innovation and teamwork, while also being capable of independently driving projects forward.
 * Open source contribution for probabilistic programming languages.
 * Experiment Design and statistic test using Bayesian analysis for experiment reporting.
 
 **Team Leader** 
 b-it-bots Team  <br>
-2017 -- present <br>
+2017 -- 2022 <br>
 Bonn-Rhein-Sieg University of Applied Sciences <br>
 
 * Managing a team of software developers and roboticist.

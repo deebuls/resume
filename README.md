@@ -6,46 +6,64 @@ Germany, 53757  <br>
 deebuls@gmail.com 
 
 ## Work Experience
+
+**Senior Robotics Engineer** <br>
+ST Engineering Applied Solutions <br>
+2022 -- present <br>
+ST Engineering <br>
+
+* Developed and Integrated custom navigation stack for construction robots on top of ROS architecture.
+* Deployed robot control software on ARM based embedded systems.
+* Developed and deployed computer vision algorithms for water spray detection for construction robot. 
+* Demonstrated expertise in C/C++/Python programming, particularly in an embedded environment, to ensure efficient and high-performance code execution.
+* Temporal sensor fusion in DNN with different probabilistic methods Kalman Filter, Particle Filter. 
+* Ported robot software from ROS1 to ROS2.
+* Integrated the software with various ROS/ROS2 modules, ensuring seamless communication and compatibility with existing systems.
+* Wrote detailed documentation, including design specifications, user manuals, and technical guides, to facilitate seamless knowledge transfer and maintain system integrity.
+* Expertly leveraged computer vision frameworks and libraries such as Torch, PyTorch, Tensorflow, Tflite, ONNX, and OpenCV to develop and deploy robust applications.
+* Collaborated effectively with a team of engineers, fostering an environment of innovation and teamwork, while also being capable of independently driving projects forward.
+
+
 **Senior Research Assistant** <br>
 Sesame Project <br>
-2022 -- present <br>
+2017 -- 2022 <br>
 Bonn-Rhein-Sieg University of Applied Sciences<br>
 
-* Uncertainty estimation for Deep Neural Networks(DNN).
-* Improving reliability of DNN for robot deployment.
-* Temporal sensor fusion in DNN to incorcorporate emodiment in decision
-making.
+* Led the technical design phase, collaborating with a cross-functional team to determine the optimal architecture and system requirements.
+* Defined and architected a software system for implementing deep learning and computer vision algorithms on embedded systems(Yolov8 / FOMO/ Resnet8).
+* Implemented the system, including architecture modifications and quantization, to ensure efficient processing and execution on embedded platforms(coral, movidius, rasbery pi, OAD-D).
+* Trained and Deployed Uncertainty estimation for Deep Neural Networks(DNN) to improve robustness, reliability and Dependability attributes.
+* Developed custom data collection rigs and smart annotation of data.
+* Utilized strong understanding of machine learning and computer vision algorithms, including CNN/deep learning, to design and optimize algorithms for efficient implementation on embedded systems.
+* Open source contribution for probabilistic programming languages.
+* Experiment Design and statistic test using Bayesian analysis for experiment reporting.
 
 **Team Leader** 
 b-it-bots Team  <br>
-2017 -- present <br>
+2017 -- 2022 <br>
 Bonn-Rhein-Sieg University of Applied Sciences <br>
 
 * Managing a team of software developers and roboticist.
-* Architecture Design, Software development(c++, python), Testing, CI, H/W
-Integration.
-* Integration of machine learning algorithms with ROS architecture.
+* Architecture Design, Software development(c++, python), Testing, CI, H/W Integration.
+* Integration of machine learning algorithms with ROS/ROS2 architecture.
 * Deep learning networks on embedded boards.
 * Maintainer for university open-source projects <https://github.com/b-it-bots>.
 * Porting ROS1 to ROS2.
+* Maintenance of multiple embedded robots like Youbot, Robile, Toyota HSR, Kinova arm.
+* Navigation stack (ros_navigation/nav2) deployment on multiple robots.
+* State machine development using SMACH and Behaviour Tree
+* Custom localization algorithm development and integration on robots with 3D lidar.
 
-**Project Co-ordinator**  <br>
-SciRoc Project  <br>
-2017 -- 2022  <br>
-Bonn-Rhein-Sieg University of Applied Sciences
-
-* Robotics benchmarking protocol definition for smart city scenario <https://sciroc.org/>.
-* Conducting robotics benchmarking events.
-* Data collection and reporting of robot tasks.
 
 **Research Assistant**  <br>
 DigiKlausur  <br>
 2016 -- 2017  <br>
 Prof. Paul Plöger, Bonn-Rhein-Sieg University of Applied Sciences
 
-* Infrastructure development for the Jupyter notebook based electronic
+* Docker, Kubernetes cluster deployment for the Jupyter notebook based electronic
 examination.
-* Supervised 2 students in their research and development projects for NLP
+* Deployed jupyterhub server on google cloud and OpenStack.
+* Supervised students in their research and development projects for NLP
 based auto-grading.
 
 **Research Software Developer**  <br>
@@ -105,7 +123,7 @@ x86 board.
 ## Technical Skills
 
 * **Programming Languages**: C, C++, Python
-* **Platforms & Frameworks**: Robot Operating Systems(ROS), Tensorflow,
+* **Platforms & Frameworks**: Robot Operating Systems(ROS/ROS2), Tensorflow,
 PyTorch, Scikit
 * **Tools & Libraries**: Git, Vim, Github actions, Docker, Travis, Lxc
 container
