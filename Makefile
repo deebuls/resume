@@ -7,6 +7,7 @@ pdf:
 	pdflatex --output-directory build ${filename}
 	pdflatex --output-directory build ${filename}
 	mv build/${filename}.pdf .
+	rm -rf build
 
 read:
 	evince build/${filename}.pdf &
